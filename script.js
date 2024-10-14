@@ -175,7 +175,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "Melyik tenger van a legnagyobb területű a világon?",                           //34
+        question: "Melyik tenger a legnagyobb területű a világon?",                           //34
         answers: ["Karib-tenger", "Égei-tenger", "Fülöp-tenger", "Fekete-tenger"],
         correctAnswer: 2
     },
@@ -429,7 +429,7 @@ let questions = [
         correctAnswer: 1
     },
     {
-        question: "Mi volt Albert Einsteinutols szava ?",
+        question: "Mi volt Albert Einstein utolsó szava ?",
         answers: ["„A tudás nem mindíg hatalom”", "„Csak a vak fél a sötéttől amit hátrahagy”", "„Oh igen, már látom”", "Nem tudom"],     //81
         correctAnswer: 3,
 

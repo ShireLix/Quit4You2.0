@@ -550,7 +550,7 @@ let questions = [
 ];
 
 questions = removeDuplicates(questions);
-
+//fontos let-ek
 let currentQuestionIndex = 0;
 let lives = 3;
 const maxLives = 3;
@@ -580,7 +580,7 @@ function updateLifelineButtons() {
     document.getElementById("tippButton").innerText = `Tipp (${maxLifelineUses - tippCount})`;
 }
 
-
+//ne legyen ketszer ugyan az a kerdes
 function removeDuplicates(array) {
     const uniqueQuestions = [];
     const seenQuestions = new Set();
@@ -594,7 +594,7 @@ function removeDuplicates(array) {
 
     return uniqueQuestions;
 }
-
+//random sorrend
 function shuffleQuestions(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -623,7 +623,7 @@ function kerdesekmegjelen() {
     questionElement.innerText = currentQuestion.question;
     questionNumberElement.innerText = `Kérdés       ${currentQuestionIndex + 1} / ${questions.length}`;
 
-    // Handle image display
+    //ide jon majd kepek
     if (currentQuestion.image) {
         imageElement.src = currentQuestion.image;
         imageElement.style.display = "block";
@@ -718,7 +718,7 @@ function updateLives() {
     }
 }
 
-
+//segitsegek hasznalata
 function useLifeline(type) {
     const correctAnswerIndex = questions[currentQuestionIndex].correctAnswer;
     const answerElements = [
@@ -780,7 +780,7 @@ function useLifeline(type) {
         updateLifelineButtons(); 
     }
     
-
+//ketfele ending
 function endGame(won) {
     if (won) {
         window.location.href = "gratulation.html";
@@ -790,7 +790,7 @@ function endGame(won) {
         window.location.href = "loser.html"; 
     }
 }
-
+//sima reset
 function ujjatek() {
     currentQuestionIndex = 0;
     lives = maxLives;
@@ -802,7 +802,7 @@ function ujjatek() {
     startGame();
 }
 
-
+//jatek betoltese
 window.onload = function () {
     updateLives();
     updateLifelineButtons(); 

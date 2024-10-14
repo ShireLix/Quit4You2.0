@@ -351,7 +351,7 @@ let questions = [
  
     },
     {   
-        question: "Melyik szó hiányzik a mondásból? ..., mint a fekekötő. ",          //66
+        question: "Melyik szó hiányzik a mondásból? ..., mint a kefekötő. ",          //66
         answers: ["iszik", "alszik", "mászik", "eszik"],
         correctAnswer: 0
     },
